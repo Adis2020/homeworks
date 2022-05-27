@@ -8,10 +8,10 @@ else{
     points--;
     alert('-1 балл');
 }
-alert(`Итого у вас ${points} баллов`);
+alert(`Сейчас у вас ${points} балл`);
 
-player = prompt('Когда начались курсы? Ответ надо записать в дд.мм.гг. Пример 27.05.22')
-if (player == 01.03.22){
+player = prompt('Сколько будет 22+22?')
+if (player == 44){
     points++;
     alert('+ 1 балл');
 }
@@ -19,3 +19,4 @@ else {
     points--;
     alert('-1 балл');
 }
+alert(`Итого у вас ${points} баллов`);
