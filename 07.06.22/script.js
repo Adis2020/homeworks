@@ -13,7 +13,7 @@ additionsCube(5, 5, 5);
 
 //3 задание
 function getName(name) {
-    if (name != undefined) alert(`Привет ${name}`);
+    if (name != false) alert(`Привет ${name}`);
     else alert('Напишите имя');
 }
 getName(prompt('Введите имя'))
