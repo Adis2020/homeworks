@@ -16,3 +16,8 @@ function getMessage() {
 getMessage();
 
 //3 Задание
+function twoFunction() {
+    calcNumber();
+    getMessage();
+}
+alert(twoFunction());
