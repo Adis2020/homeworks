@@ -20,4 +20,5 @@ function twoFunction() {
     calcNumber();
     getMessage();
 }
-alert(twoFunction());
+twoFunction();
+//Обе функции работают и вызываются как одна функция. Однако функция 'calcNumber' не будет работать так как надо
