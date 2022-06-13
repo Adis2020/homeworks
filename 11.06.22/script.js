@@ -1,11 +1,9 @@
 //1 Задание
-function calcNumber(a, b) {
-    return a - b;
+function calcNumber(number = prompt('Первое число'), number2 = prompt('второе число')) {
+    let result = number - number2;
+    alert(result);
 }
-let number = prompt('Введите первое число');
-let number2 = prompt('Введите второе число');
-let result = calcNumber(number, number2);
-alert(result);
+calcNumber();
 
 //2 Задание
 let message = prompt('Написать сообщение');
@@ -20,4 +18,3 @@ function twoFunction() {
     getMessage();
 }
 twoFunction();
-//Обе функции работают и вызываются как одна функция. Однако функция 'calcNumber' не будет работать так как надо
