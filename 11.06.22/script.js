@@ -8,9 +8,8 @@ let result = calcNumber(number, number2);
 alert(result);
 
 //2 Задание
-let message;
+let message = prompt('Написать сообщение');
 function getMessage() {
-    message = prompt('Написать сообщение');
     alert(message);
 }
 getMessage();
