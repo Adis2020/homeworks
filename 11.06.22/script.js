@@ -13,10 +13,8 @@ function getMessage() {
 getMessage();
 
 //3 Задание
-function twoFunction() {
-    calcNumber();
-    getMessage();
-}
-twoFunction();
+let twoFunctions = calcNumber() + getMessage();
+twoFunctions();
+console.log(twoFunctions);
 
 
