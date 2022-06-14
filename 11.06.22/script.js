@@ -18,3 +18,9 @@ function twoFunctions() {
 }
 twoFunctions();
 
+/*function twoFunctions() {
+    calcNumber();
+    getMessage();
+}
+twoFunctions();*/
+
