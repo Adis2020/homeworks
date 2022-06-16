@@ -1,11 +1,12 @@
 //Классная работа
 //1 Задание
-let arr = []
 function calcArr(text, number) {
+    let arr = [];
     for (let i = 0; i < number; i++){
         arr[i] = text;
+        return arr;
     }
-    console.log(arr);
+    calcArr();
 }
 calcArr('JavaScript', 10);
 
@@ -30,7 +31,7 @@ calcResult(50, 2);
 
 //Д/З
 //1 Задание
-arr = []
+let arr = []
 for (let i = 0; i < 10; i++){
     arr.push('x');
 }
