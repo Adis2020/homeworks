@@ -1,3 +1,4 @@
+//Классная работа
 //1 Задание
 let arr = []
 function calcArr(text, number) {
