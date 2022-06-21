@@ -9,7 +9,7 @@ console.log(result);
 //2 Задание
 function myFunc(array) {
     let reverse = [];
-    for (let i = array.length - 1; i >= 0; i -= 1) {
+    for (let i = array.length - 1; i >= 0; i--) {
         reverse.push(array[i]);
     }
     return reverse;
