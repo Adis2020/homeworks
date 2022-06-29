@@ -1,0 +1,21 @@
+.product_card {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+}
+.product_card img{
+    display: block;
+    height: 200px;
+    width: 100px;
+}
+.image-cola{
+    display: block;
+    height: 200px;
+    width: 100px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.text {
+    margin-left: 150px;
+}
