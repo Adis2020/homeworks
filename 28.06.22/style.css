@@ -1,21 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap');
+
+.product_cards {
+    display: flex;
+    justify-content: center;
+}
+
 .product_card {
-    height: 400px;
-    width: 400px;
+    height: 354px;
+    width: 300px;
+    margin: 0;
+    padding: 0;
     border: 2px solid black;
+
+    background-color: darkgray;
 }
-.product_card img{
-    display: block;
-    height: 200px;
-    width: 100px;
-}
-.image-cola{
+.image-cola {
     display: block;
     height: 200px;
     width: 100px;
     margin: 0 auto;
-    border: 2px solid black;
+}
+
+.Frames-around-image {
+    height: 205px;
+    width: 200px;
+    margin-top: -2px; /* Убирает отступ с верха карточки */
+    margin-left: 49px;
+    border: 2px solid #7a7a7a;
 }
 
 .text {
-    margin-left: 150px;
+    margin-left: 81px; /* Центрирует тексты в карточке в центр */
+
+    font-family: 'Noto Sans', sans-serif;
+
+    color: white;
+}
+
+.text_cola {
+    height: 30px;
+    margin-left: 75px;
+    margin-top: 5px;
+
+    font-family: 'Yellowtail', cursive;
+    font-size: 40px;
+
+    color: white;
+}
+
+button {
+    display: block;
+    height: 40px;
+    width: 304px;
+    margin-left: -2px; /* Изменять в том случае если менять ширину и местоположение.
+                          Служит для убирание отступов */
+    color: white;
+    background-color: #fa3434;
+}
+
+h1 {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
 }
