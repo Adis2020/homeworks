@@ -1,0 +1,57 @@
+body{
+    background-color: #b9b4b4;
+}
+
+.card{
+    display: flex;
+    background-color: white;
+    width: 400px;
+    height:480px;
+    margin: 7% 35%;
+    border-radius: 20px;
+}
+
+img{
+    height: 242px;
+    width: 244px;
+    position: relative;
+    left: 75px;
+}
+
+.name{
+    margin: 239px -227px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    width: 100%;
+}
+
+span{
+    font-size: 13px;
+    font-weight: 400;
+}
+
+a{
+    position: relative;
+    width: 232px;
+    height: 35px;
+    top: 409px;
+    left: -93px;
+    text-decoration: none;
+}
+
+button{
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    width: 232px;
+    height: 35px;
+    border-radius: 15px;
+    border: 0px;
+    background-color: #464f68;
+    transition-duration: 1s;
+}
+
+button:hover{
+    background: #060b18;
+    cursor: pointer;
+}
