@@ -1,30 +1,30 @@
-/******** Поиск элементов **********/
+//1 Задание
+const imgColaClick = document.querySelector('#image_cola');
+const imgBikeClick = document.querySelector('#image_bike');
 
-const product_card = document.getElementById('product-card');
-const product_photo = document.getElementsByClassName('photo1');
-const product_description = document.getElementsByTagName('span');
-const product_price = document.querySelector('.price');
-const elements = document.querySelectorAll('#product-card .photo');
-const showModal = () => {
-    alert(new Date().toDateString());
-    return false;
+imgColaClick.onclick = () => {
+    alert('Это Coca-Cola. 1Л');
+};
+imgBikeClick.onclick = () => {
+    alert('Это велосипед. Белого цвета');
 }
 
-const test = () => {
-    console.log('work');
+//2 Задание
+const link = document.querySelector('#link_google');
+const link2 = document.querySelector('#link_google2');
+const link3 = document.querySelector('#link_google3');
+
+const linkGoogle = () => {
+    alert('Это ссылка ведёт в google.com');
 }
 
-/******** Событии и обработчик **********/
+link.onmouseover = linkGoogle;
+link2.onmouseover = linkGoogle;
+link3.onmouseover = linkGoogle;
 
-const info_btn = document.querySelector('#get-info-btn');
-const info_btn2 = document.querySelector('#get-info-btn2');
-const info_btn3 = document.querySelector('#get-info-btn3');
-const info_btn4 = document.querySelector('#get-info-btn4');
-const info_btn5 = document.querySelector('#get-info-btn5');
-const info_btn6 = document.querySelector('#get-info-btn6')
-info_btn.onclick = showModal;
-info_btn2.ondblclick = showModal;
-info_btn3.oncontextmenu = showModal;
-info_btn4.onmouseenter = showModal;
-info_btn5.onmouseleave = test;
-info_btn6.onmousemove = test;
+//3 Задание
+let arguments = [];
+
+function UniteText() {
+
+}
