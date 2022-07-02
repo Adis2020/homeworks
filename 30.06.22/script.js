@@ -25,13 +25,11 @@ link3.onmouseover = linkGoogle;
 //3 Задание
 let arguments = [];
 
-function UniteText(txt1, txt2, txt3) {
+function UniteText(...args) {
     let array = [];
-    array.push(txt1);
-    array.push(txt2);
-    array.push(txt3);
+    for (let arg of args) array += arg;
     return array;
 }
 
-arguments = UniteText('Привет', 'Coca-Cola', 'Напиток')
+arguments = UniteText('Привет', ' Coca-Cola', ' напиток');
 alert(arguments);
