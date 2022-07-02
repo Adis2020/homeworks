@@ -14,7 +14,7 @@ const link = document.querySelector('#link_google');
 const link2 = document.querySelector('#link_google2');
 const link3 = document.querySelector('#link_google3');
 
-const linkGoogle = () => {
+function linkGoogle() {
     alert('Это ссылка ведёт в google.com');
 }
 
@@ -25,6 +25,13 @@ link3.onmouseover = linkGoogle;
 //3 Задание
 let arguments = [];
 
-function UniteText() {
-
+function UniteText(txt1, txt2, txt3) {
+    let array = [];
+    array.push(txt1);
+    array.push(txt2);
+    array.push(txt3);
+    return array;
 }
+
+arguments = UniteText('Привет', 'Coca-Cola', 'Напиток')
+alert(arguments);
