@@ -5,9 +5,7 @@ const imgBikeClick = document.querySelector('#image_bike');
 imgColaClick.onclick = () => {
     alert('Это Coca-Cola. 1Л');
 };
-imgBikeClick.onclick = () => {
-    alert('Это велосипед. Белого цвета');
-}
+imgBikeClick.onclick = alert('Привет')
 
 //2 Задание
 const link = document.querySelector('#link_google');
@@ -23,6 +21,7 @@ link2.onmouseover = linkGoogle;
 link3.onmouseover = linkGoogle;
 
 //3 Задание
+/*
 let arguments = [];
 
 function UniteText(...args) {
@@ -32,4 +31,14 @@ function UniteText(...args) {
 }
 
 arguments = UniteText('Привет', ' Coca-Cola', ' напиток');
-alert(arguments);
+alert(arguments);*/
+
+function UniteText() {
+    let array = '';
+    for (let i = 0; i < arguments.length; i++){
+        array = arguments[i] || '';
+    }
+    return array;
+}
+let result = UniteText('Привет', 'да', 'пока', 'JavaScript');
+alert(result);
