@@ -15,9 +15,20 @@ body{
     margin-left: 10px;
 
     border-radius: 15px;
-    box-shadow: 0 0 20px #616161;
+    box-shadow: 0 0 15px #616161;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 
     background-image: linear-gradient(to left, #b546fa, #fa4646);
+}
+
+.product_card:hover{
+    box-shadow: 0 0 50px #141414;
+    transition: 0.2s;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.04);
 }
 
 .images{
