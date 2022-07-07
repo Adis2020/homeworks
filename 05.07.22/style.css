@@ -6,3 +6,20 @@
 .background-red{
     background-color: red;
 }
+
+.notification{
+    width: 120px;
+    height: 20px;
+    margin-left: 91%;
+
+    text-align: center;
+    color: #dbdbdb;
+
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: #292929;
+}
+
+button{
+
+}

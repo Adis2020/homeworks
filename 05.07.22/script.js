@@ -7,21 +7,15 @@ clickNewColor.addEventListener('click', () => {
 
 //2 задание
 const notification = document.querySelector('#show_notification');
+const button = document.querySelector('#click_button')
 
-function showNotification() {
-    notification.style.width = '120px';
-    notification.style.height = '20px';
-    notification.style.marginLeft = '91%';
-    notification.style.marginTop = '-200px';
-
+function showNotification(){
+    notification.classList.add('notification');
     notification.textContent = 'Hello!';
-    notification.style.textAlign = 'center';
-    notification.style.color = '#dbdbdb';
-
-    notification.style.border = '2px solid black';
-    notification.style.borderRadius = '6px';
-    notification.style.backgroundColor = '#292929';
+    setTimeout(() => {
+        notification.classList.remove('notification');
+        notification.textContent = '';
+    }, 1500);
 }
-showNotification();
-setTimeout(() => notification.remove(), 1500);
 
+button.addEventListener('click', showNotification);
