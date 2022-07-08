@@ -1,0 +1,14 @@
+.notification{
+    position: absolute;
+    width: 120px;
+    height: 20px;
+    margin-left: 1396px;
+    top: 8px;
+
+    text-align: center;
+    color: #dbdbdb;
+
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: #292929;
+}
