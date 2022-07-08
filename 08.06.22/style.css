@@ -1,25 +1,15 @@
-body{
+.notification {
     display: flex;
-    flex-direction: column;
-}
-
-.notification{
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    width: 300px;
+    width: 200px;
     height: 45px;
-    margin-left: 598px;
-    margin-top: 140px;
+    margin-left: 1320px;
 
-    border: 2px solid black;
+    font-size: 20px;
+
     border-radius: 6px;
-    background-color: #292929;
-}
-
-.text-notification{
-    margin-top: 12px;
-
-    text-align: center;
-    color: #dbdbdb;
 }
 
 .button{
