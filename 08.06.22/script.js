@@ -1,9 +1,10 @@
-const notification = document.querySelector('#show_notification');
-const button = document.querySelector('#click_button')
-
 function showNotification(option){
+    const notification = document.querySelector('#show_notification');
+    const elem = document.createElement('div');
     notification.classList.add('notification');
-    notification.textContent = option.html;
+    elem.className = 'text-notification';
+    elem.innerText = option.html;
+    notification.prepend(elem);
     setTimeout(() => {
         notification.classList.remove('notification');
         notification.textContent = '';
