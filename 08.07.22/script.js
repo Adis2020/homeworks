@@ -60,5 +60,5 @@ function showNotification(option) {
 
 showNotification({
     html: 'HELLO!',
-    className: 'alert-secondary'
+    className: 'alert-success'
 });
