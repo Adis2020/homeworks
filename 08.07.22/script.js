@@ -49,6 +49,8 @@ function showNotification(option) {
         wrapper.className = 'notification';
         wrapper.style.backgroundColor = '#7d7d7d';
         notification.append(wrapper);
+    }else {
+        console.log('Ошибка побробуйте снова');
     }
     setTimeout(() => {
         wrapper.classList.remove(option.className, 'notification');
