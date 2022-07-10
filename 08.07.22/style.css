@@ -3,19 +3,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    height: 50px;
     width: 150px;
     margin-left: 89%;
+
+    font-size: 20px;
+
+    box-shadow: 0px 0px 5px 1px;
+    border-radius: 10px;
 }
 
-.alert-primary{
-    color: #084298;
-    background-color: #cfe2ff;
-}
+.notification img{
+    margin-left: 5px;
 
-.alert-secondary{
-    color: #41464b;
-    background-color: #e2e3e5;
+    width: 30px;
+    height: 30px;
 }
 
 .alert-success{
@@ -32,22 +34,4 @@
     color: #664d03;
     background-color: #fff3cd;
     border-color: #ffecb5;
-}
-
-.alert-info {
-    color: #055160;
-    background-color: #cff4fc;
-    border-color: #b6effb;
-}
-
-.alert-light {
-    color: #636464;
-    background-color: #fefefe;
-    border-color: #fdfdfe;
-}
-
-.alert-dark {
-    color: #141619;
-    background-color: #d3d3d4;
-    border-color: #bcbebf;
 }
