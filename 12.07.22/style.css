@@ -1,0 +1,15 @@
+.cards{
+    display: flex;
+}
+
+.card{
+    width: 200px;
+
+    font-size: 18px;
+    text-align: center;
+}
+
+.cards-images{
+    height: 230px;
+    width: 200px;
+}
