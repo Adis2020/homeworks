@@ -1,17 +1,23 @@
 const cards = document.querySelector('#cards');
 
-function setCard(option) {
+function setCard(option){
     let card = document.createElement('div');
     let image = document.createElement('img');
     let name = document.createElement('div');
     let price = document.createElement('div');
+    let links = document.createElement("a");
     card.id = option.id;
     card.className = 'card';
     image.src = option.imageURL;
     image.className = 'cards-images';
-    name.innerHTML = option.name;
-    price.innerHTML = `Цена: ${option.price} сом`;
-    card.append(image, name, price);
+    name.innerText = option.name;
+    name.className = 'cards-names';
+    price.innerText = `От ${option.price} сом`;
+    price.className = 'cards-prices';
+    links.innerText = 'Купить';
+    links.href = '#';
+    links.className = 'cards-links';
+    card.append(image, name, price, links);
     cards.append(card);
 }
 

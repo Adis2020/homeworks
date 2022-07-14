@@ -3,13 +3,29 @@
 }
 
 .card{
-    width: 200px;
+    text-align: center;
+}
+
+.cards-names{
+    margin-top: 20px;
 
     font-size: 18px;
     text-align: center;
+    font-family: 'Albert Sans', sans-serif;
+}
+
+.cards-prices{
+    margin-top: 20px;
+
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 17px;
 }
 
 .cards-images{
     height: 230px;
     width: 200px;
+}
+
+.cards-links{
+    margin-top: 10px;
 }
