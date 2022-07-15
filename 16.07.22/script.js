@@ -230,3 +230,55 @@ const arrayUsers = [
         }
     }
 ]
+
+function getUsers(elements) {
+    elements.forEach( (item) => {
+        const cardUser = document.createElement('div');
+        cardUser.className = 'card-user';
+
+        const cardUserImg = document.createElement('img');
+        cardUserImg.src = 'https://cdn-icons-png.flaticon.com/512/1250/1250689.png';
+        const cardUserName = document.createElement('p');
+        cardUserName.className = 'card-user-name';
+        cardUserName.innerText = item.name;
+
+        const cardUserEmailImg= document.createElement('img');
+        cardUserEmailImg.src = 'https://cdn-icons-png.flaticon.com/512/732/732200.png'
+        const cardUserEmail = document.createElement('div');
+        cardUserEmail.className = 'card-user-email';
+        cardUserEmail.innerText = item.email;
+
+        const cardUserStreetImg = document.createElement('img');
+        cardUserStreetImg.src = 'https://cdn-icons-png.flaticon.com/512/927/927667.png';
+        const cardUserStreet = document.createElement('div');
+        cardUserStreet.innerText = `Street: ${item.address.street}`;
+
+        const cardUserCityImg = document.createElement('img');
+        cardUserCityImg.src = 'https://cdn-icons-png.flaticon.com/512/2942/2942076.png';
+        const cardUserCity = document.createElement('div');
+        cardUserCity.innerText = `City: ${item.address.city}`;
+
+        const cardUserPhoneImg = document.createElement('img');
+        cardUserPhoneImg.src = 'https://cdn-icons-png.flaticon.com/512/159/159832.png';
+        const cardUserPhone = document.createElement('div');
+        cardUserPhone.innerText = `Phone: ${item.phone}`;
+
+        const cardUserCompanyImg = document.createElement('img');
+        cardUserCompanyImg.src = 'https://cdn-icons.flaticon.com/png/512/3222/premium/3222642.png?token=exp=1657900850~hmac=ae680025e433d1ede5e289a70ad30315';
+        const cardUserCompany = document.createElement('div');
+        cardUserCompany.innerText = item.company.name;
+
+        cardUserName.prepend(cardUserImg);
+        cardUserEmail.prepend(cardUserEmailImg);
+        cardUserCity.prepend(cardUserCityImg);
+        cardUserStreet.prepend(cardUserStreetImg);
+        cardUserPhone.prepend(cardUserPhoneImg);
+        cardUserCompany.prepend(cardUserCompanyImg);
+
+        const cardsUsers = document.querySelector('#CardsUsers');
+        cardUser.append(cardUserName, cardUserEmail, cardUserStreet, cardUserCity, cardUserPhone, cardUserCompany);
+        cardsUsers.append(cardUser);
+    })
+}
+
+getUsers(arrayUsers)

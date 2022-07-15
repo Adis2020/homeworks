@@ -1,0 +1,28 @@
+.cards-users{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.card-user{
+    height: 200px;
+    width: 269px;
+    padding: 10px;
+
+    font-size: 20px;
+
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: #4d4b4c 0px 0px 20px 2px;
+}
+
+.card-user img{
+    height: 13px;
+    width: 14px;
+    padding-right: 5px;
+}
+
+.card-user-name{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
