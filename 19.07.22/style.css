@@ -1,0 +1,158 @@
+body{
+    display: flex;
+    justify-content: center;
+
+    background-color: black;
+}
+
+.questionnaire{
+    padding: 40px 0px 16px 16px;
+    height: 520px;
+    width: 648px;
+    margin-top: 4%;
+
+    border-radius: 8px;
+    background-color: white;
+}
+
+.text-title{
+    font-size: 16px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+}
+
+.text-secondary1{
+    margin-top: 24px;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.boxs{
+    height: 48px;
+    width: 200px;
+    margin-top: 16px;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    opacity: 0.5;
+    border: 0.5px solid #AEAEAE;
+    border-radius: 8px;
+}
+
+.text-secondary2{
+    margin-top: 16px;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.medium-square{
+    height: 48px;
+    width: 200px;
+    margin-top: 16px;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    opacity: 0.5;
+    border: 0.5px solid #AEAEAE;
+    border-radius: 8px;
+    background: url(images/calendar.png) no-repeat center right;
+}
+
+.long-square1{
+    height: 48px;
+    width: 408px;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    opacity: 0.5;
+    border: 0.5px solid #AEAEAE;
+    border-radius: 8px;
+}
+
+.long-square2{
+    height: 48px;
+    width: 408px;
+    margin-top: 16px;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    opacity: 0.5;
+    border: 0.5px solid #AEAEAE;
+    border-radius: 8px;
+}
+
+.button-form1{
+    position: absolute;
+    height: 48px;
+    width: 384px;
+    margin-top: 104px;
+    margin-left: -300px;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+    background-color: #232529;
+}
+
+.button-form1:active{
+    background-color: #1c1d1f;
+}
+
+.button-form2{
+    position: absolute;
+    height: 48px;
+    width: 384px;
+    margin-top: 80px;
+    margin-left: -490px;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #FFFFFF;
+
+    cursor: pointer;
+    background-color: #232529;
+}
+
+.button-form2:active{
+    background-color: #1c1d1f;
+}
+
+.salary-box{
+    height: 48px;
+    width: 304px;
+    margin-top: 16px;
+
+    opacity: 0.5;
+    border: 0.5px solid #AEAEAE;
+    border-radius: 8px;
+}
+
+.ultra-square{
+    height: 48px;
+    width: 625px;
+    margin-top: 8px;
+
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+
+    opacity: 0.5;
+    border: 0.5px solid #AEAEAE;
+    border-radius: 8px;
+}

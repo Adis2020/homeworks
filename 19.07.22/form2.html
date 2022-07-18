@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Анкета 2</title>
+</head>
+<body>
+    <div class="questionnaire">
+        <div class='text-title'>Данные о ваших доходах</div>
+        <form action="javascript:void(0)" id="full_name">
+            <input type="text" placeholder="Наименование организации" class="long-square1" id="organization">
+            <input type="text" placeholder="Должность" class="boxs" id="Job_title">
+            <input type="text" placeholder="Заработная плата в  месяц" class="salary-box" id="salary1mth">
+            <input type="text" placeholder="Заработная Плата  за посл.  3 месяца" class="salary-box" id="salary3mth">
+        <div class="text-secondary2">Сведения о кредите</div>
+            <input type="text" placeholder="Покупка телефона ( наименование товара)" class="ultra-square" id="phone_name">
+            <input type="text" placeholder="Стоимость товара" class="boxs" id="cost">
+            <input type="text" placeholder="Количество товара" class="boxs">
+            <input type="text" placeholder="Итого сумма кредита" class="boxs">
+            <select class="boxs">
+                <option value="0">Вид кредита </option>
+                <option value="1">1 вид</option>
+                <option value="2">2 вид</option>
+            </select>
+            <input type="text" placeholder="Срок кредита ( мес)" class="boxs">
+            <select class="ultra-square">
+                <option value="0">Точка получения товара</option>
+                <option value="park">Парк</option>
+                <option value="moon">Луна</option>
+            </select>
+            <button class="button-form2">Далее</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

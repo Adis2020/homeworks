@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Анкета</title>
+</head>
+<body>
+    <div class="questionnaire">
+        <div class='text-title'>Анкета для корпоративных клиентов</div>
+        <div class="text-secondary1">Личные данные</div>
+        <form action="javascript:void(0)" id="full_name">
+            <input type="text" placeholder="Фамилия" class="boxs" id="surname">
+            <input type="text" placeholder="Имя" class="boxs" id="name">
+            <input type="text" placeholder="Отчество" class="boxs" id="middle_name">
+        <div class="text-secondary2">Паспортные данные</div>
+            <input type="text" placeholder="Дата рождения" class="medium-square" id="date_of_birth">
+            <input type="text" placeholder="Место проживания по прописке" class="long-square1" id="place_residence_registration">
+            <input type="text" placeholder="Серийный номер AN/ID" class="boxs" id="ANID">
+            <input type="text" placeholder="ИНН" class="boxs" id="TIN">
+            <input type="text" placeholder="Дата получения" class="medium-square" id="date_get">
+            <input type="text" placeholder="Контактный номер" class="boxs" id="phone">
+            <input type="text" placeholder="Электронный адрес" class="boxs" id="email">
+            <select class="boxs" id="Bank">
+                <option value="0">Наименование банка</option>
+                <option value="DemirBank">DemirBank</option>
+                <option value="OptimaBank">OptimaBank</option>
+            </select>
+            <input type="text" placeholder="Фактическое место проживания" class="long-square2" id="address">
+            <button class="button-form1">Далее</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
