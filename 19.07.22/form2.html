@@ -14,31 +14,31 @@
 <body>
     <div class="questionnaire">
         <div class='text-title'>Данные о ваших доходах</div>
-        <form action="javascript:void(0)" id="full_name">
+        <form action="javascript:void(0)" id="form">
             <input type="text" placeholder="Наименование организации" class="long-square1" id="organization">
             <input type="text" placeholder="Должность" class="boxs" id="Job_title">
             <input type="text" placeholder="Заработная плата в  месяц" class="salary-box" id="salary1mth">
             <input type="text" placeholder="Заработная Плата  за посл.  3 месяца" class="salary-box" id="salary3mth">
         <div class="text-secondary2">Сведения о кредите</div>
             <input type="text" placeholder="Покупка телефона ( наименование товара)" class="ultra-square" id="phone_name">
-            <input type="text" placeholder="Стоимость товара" class="boxs" id="cost">
-            <input type="text" placeholder="Количество товара" class="boxs">
-            <input type="text" placeholder="Итого сумма кредита" class="boxs">
-            <select class="boxs">
-                <option value="0">Вид кредита </option>
+            <input type="text" placeholder="Стоимость товара" class="boxs" id="cost_item">
+            <input type="text" placeholder="Количество товара" class="boxs" id="more_items">
+            <input type="text" placeholder="Итого сумма кредита" class="boxs" id="result_credit">
+            <select class="boxs" id="see_credit">
+                <option value="">Вид кредита </option>
                 <option value="1">1 вид</option>
                 <option value="2">2 вид</option>
             </select>
-            <input type="text" placeholder="Срок кредита ( мес)" class="boxs">
-            <select class="ultra-square">
+            <input type="text" placeholder="Срок кредита ( мес)" class="boxs" id="continues_credit">
+            <select class="ultra-square" id="pickup_point">
                 <option value="0">Точка получения товара</option>
                 <option value="park">Парк</option>
                 <option value="moon">Луна</option>
             </select>
-            <button class="button-form2">Далее</button>
+            <button type="submit" class="button-form2">Отправить</button>
         </form>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 </body>
 </html>
