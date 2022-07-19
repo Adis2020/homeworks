@@ -1,6 +1,6 @@
-const button = document.querySelector('#form');
+const form = document.querySelector('#form');
 
-button.addEventListener('submit', () => {
+form.addEventListener('submit', () => {
     const userNameElement = document.querySelector('#name');
     const surNameElement = document.querySelector('#surname');
     const middleNameElement = document.querySelector('#middle_name');

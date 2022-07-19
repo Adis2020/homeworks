@@ -1,8 +1,8 @@
-const button = document.querySelector('#form');
+const form = document.querySelector('#form');
 
-let User = {}
+let user = {};
 
-button.addEventListener('submit', () => {
+form.addEventListener('submit', () => {
     const organization = document.querySelector('#organization');
     const jobTitle = document.querySelector('#Job_title');
     const salaryMonth = document.querySelector('#salary1mth');
@@ -28,6 +28,6 @@ button.addEventListener('submit', () => {
     localStorage.pickupPoint = pickupPoint.value;
 })
 
-User = localStorage;
+user = localStorage;
 
-console.log(User)
+console.log(user)
