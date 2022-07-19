@@ -12,15 +12,17 @@ form.addEventListener('submit', () => {
     const Bank = document.querySelector('#Bank');
     const address = document.querySelector('#address');
 
-    localStorage.name = userNameElement.value;
-    localStorage.surName = surNameElement.value;
-    localStorage.middleName = middleNameElement.value;
-    localStorage.dateBirth = dateBirth.value;
-    localStorage.placeRegistration = placeRegistration.value;
-    localStorage.ANID = AN.value;
-    localStorage.Tin = Tin.value;
-    localStorage.DateGet = DateGet.value;
-    localStorage.Bank = Bank.value;
-    localStorage.address = address.value;
-    window.location.href = 'form2.html';
+    if (userNameElement.value && surNameElement.value && middleNameElement.value){
+        localStorage.name = userNameElement.value;
+        localStorage.surName = surNameElement.value;
+        localStorage.middleName = middleNameElement.value;
+        localStorage.dateBirth = dateBirth.value;
+        localStorage.placeRegistration = placeRegistration.value;
+        localStorage.ANID = AN.value;
+        localStorage.Tin = Tin.value;
+        localStorage.DateGet = DateGet.value;
+        localStorage.Bank = Bank.value;
+        localStorage.address = address.value;
+        window.location.href = 'form2.html';
+    }
 })
