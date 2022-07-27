@@ -104,6 +104,7 @@ body{
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
+    border-radius: 4px;
 
     cursor: pointer;
     background-color: #232529;
@@ -124,6 +125,7 @@ body{
     font-weight: 400;
     font-size: 20px;
     color: #FFFFFF;
+    border-radius: 4px;
 
     cursor: pointer;
     background-color: #232529;
@@ -155,4 +157,18 @@ body{
     opacity: 0.5;
     border: 0.5px solid #AEAEAE;
     border-radius: 8px;
+}
+
+.red-square{
+    border-color: red;
+}
+
+.error-text{
+    display: inline;
+    position: absolute;
+    margin-top: -2px; /*Распологается выше так как текст появляется внутри 'inputs'*/
+
+    font-family: 'Sora', sans-serif;
+    color: red;
+    font-size: 13px;
 }
