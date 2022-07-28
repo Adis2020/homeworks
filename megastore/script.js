@@ -1,6 +1,6 @@
 const form = document.querySelector('#form');
 
-//Вызывая функцию писать все данные через кавычки
+//Вызывая функцию писать все параметры через кавычки
 function createElement (elementName, text, className){
     const element = document.createElement(elementName);
     element.innerText = text;
