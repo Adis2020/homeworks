@@ -29,7 +29,6 @@ const removeElem = () => {
     }
 }
 
-//Собирает все данные в обьект
 const createObject = (event) => {
     for (let i = 0; i < event.length; i++){
         user[event[i].getAttribute('data-user')] = event[i].value;
