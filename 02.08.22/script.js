@@ -22,8 +22,8 @@ const checkElem = (event) => {
 
 const removeElem = () => {
     const elements = document.querySelectorAll('.text-error');
-    for (let i = 0; i < elements.length; i++){
-        if (elements[i].className === 'text-error'){
+    if (elements.length > 0){
+        for (let i = 0; i < elements.length; i++){
             elements[i].remove();
         }
     }
