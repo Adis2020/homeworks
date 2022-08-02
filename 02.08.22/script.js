@@ -1,4 +1,5 @@
 const form = document.querySelector('#form');
+let user = {};
 
 const createErrorElem = () => {
     const elem = document.createElement('p');
@@ -15,12 +16,11 @@ const checkElem = (event) => {
                 return;
             }
             event.target.nextElementSibling.remove()
-            console.log(event.target.nextElementSibling)
         }
     }
 }
 
-const findElem = () => {
+const removeElem = () => {
     const elements = document.querySelectorAll('.text-error');
     for (let i = 0; i < elements.length; i++){
         if (elements[i].className === 'text-error'){
@@ -29,15 +29,27 @@ const findElem = () => {
     }
 }
 
+//Собирает все данные в обьект
+const createObject = (event) => {
+    for (let i = 0; i < event.length; i++){
+        user[event[i].getAttribute('data-user')] = event[i].value;
+    }
+    console.log(user)
+}
+
 form.addEventListener('submit', () => {
     const elements = document.querySelectorAll('#form input, #form select, #form textarea');
-    findElem();
+    removeElem();
     for (let i = 0; i < elements.length; i++){
-        if (elements[i].hasAttribute('data-required'))
+        if (elements[i].hasAttribute('data-required')){
             if (elements[i].value === ''){
                 elements[i].classList.add('empty-field');
                 elements[i].after(createErrorElem());
                 elements[i].addEventListener('input', checkElem)
             }
+        }
+    }
+    if (elements[0].value && elements[1].value !== '') {
+        createObject(elements);
     }
 })
