@@ -33,7 +33,7 @@ const createObject = (event) => {
     for (let i = 0; i < event.length; i++){
         user[event[i].getAttribute('data-user')] = event[i].value;
     }
-    console.log(user)
+    console.log(user);
 }
 
 form.addEventListener('submit', () => {
@@ -46,9 +46,9 @@ form.addEventListener('submit', () => {
                 elements[i].after(createErrorElem());
                 elements[i].addEventListener('input', checkElem)
             }
+            else if (elements[0].value && elements[1].value !== '') {
+                createObject(elements);
+            }
         }
-    }
-    if (elements[0].value && elements[1].value !== '') {
-        createObject(elements);
     }
 })
