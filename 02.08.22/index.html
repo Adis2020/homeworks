@@ -11,16 +11,16 @@
     <div class="container">
         <form id="form" action="javascript:void(0)">
             <div class="form-control">
-                <input type="text" id="userName" placeholder="Введите имя" data-required data-lastName>
+                <input type="text" id="userName" placeholder="Введите имя" data-required data-user="name">
             </div>
             <div class="form-control">
-                <input type="tel" id="userPhone" placeholder="Введите тел номер" data-required data-name>
+                <input type="tel" id="userPhone" placeholder="Введите тел номер" data-required data-user="phone">
             </div>
             <div class="form-control">
-                <textarea id="userMsg" placeholder="Введите сообщение"></textarea>
+                <textarea id="userMsg" placeholder="Введите сообщение" data-user="message"></textarea>
             </div>
             <div class="form-control">
-                <select id="userBank">
+                <select id="userBank" data-user="bank">
                     <option value="">Выберите банк</option>
                     <option value="Bakai Bank">Bakai Bank</option>
                     <option value="Optima Bank">Optima Bank</option>
