@@ -1,5 +1,4 @@
 const form = document.querySelector('#form');
-let user = {};
 
 const createErrorElem = () => {
     const elem = document.createElement('p');
@@ -30,6 +29,7 @@ const removeElem = () => {
 }
 
 const createObject = (event) => {
+    let user = {};
     for (let i = 0; i < event.length; i++){
         user[event[i].getAttribute('data-user')] = event[i].value;
     }
@@ -38,17 +38,19 @@ const createObject = (event) => {
 
 form.addEventListener('submit', () => {
     const elements = document.querySelectorAll('#form input, #form select, #form textarea');
+    let a = 2;
     removeElem();
     for (let i = 0; i < elements.length; i++){
         if (elements[i].hasAttribute('data-required')){
             if (elements[i].value === ''){
+                a--;
                 elements[i].classList.add('empty-field');
                 elements[i].after(createErrorElem());
                 elements[i].addEventListener('input', checkElem)
             }
-            else if (elements[0].value && elements[1].value !== '') {
-                createObject(elements);
-            }
         }
+    }
+    if (a === 2) {
+        createObject(elements);
     }
 })
