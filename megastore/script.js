@@ -30,9 +30,8 @@ function findElem () {
 function makeObject (elements) {
     const data = {};
     for (let i = 0; i < elements.length; i++){
-        data[elements[i].id] = elements[i].value;
+        localStorage[elements[i].id] = elements[i].value;
     }
-
 }
 
 form.addEventListener('submit', () => {
@@ -51,5 +50,6 @@ form.addEventListener('submit', () => {
     }
     if (count === document.querySelectorAll('[data-required]').length){
         makeObject(inputs);
+        window.location.href = 'form2.html';
     }
 })
