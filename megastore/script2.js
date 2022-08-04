@@ -18,7 +18,7 @@ function checkElem (event) {
         }
 }
 
-function findElem () {
+function removeElem () {
     const elements = document.querySelectorAll('.error-text');
     if (elements.length > 0){
         for (let i = 0; i < elements.length; i++){
@@ -40,7 +40,7 @@ function makeObject (elements) {
 form.addEventListener('submit', () => {
     const inputs = document.querySelectorAll('#form input, #form select');
     let count = document.querySelectorAll('[data-required]').length;
-    findElem();
+    removeElem();
     for (let i = 0; i < inputs.length; i++) {
         if (inputs[i].hasAttribute('data-required')){
             if (inputs[i].value === '') {
