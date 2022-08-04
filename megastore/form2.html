@@ -15,23 +15,23 @@
     <div class="questionnaire">
         <div class='text-title'>Данные о ваших доходах</div>
         <form action="javascript:void(0)" id="form">
-            <input type="text" placeholder="Наименование организации" class="long-square1">
-            <input type="text" placeholder="Должность" class="boxs" id="Job_title">
-            <input type="text" placeholder="Заработная плата в  месяц" class="salary-box">
-            <input type="text" placeholder="Заработная Плата  за посл.  3 месяца" class="salary-box">
+            <input type="text" placeholder="Наименование организации" class="long-square1" id="organizationName" data-required>
+            <input type="text" placeholder="Должность" class="boxs" id="jobTitle" data-required>
+            <input type="text" placeholder="Заработная плата в  месяц" class="salary-box" id="salary1Month">
+            <input type="text" placeholder="Заработная Плата  за посл.  3 месяца" class="salary-box" id="salary3Month">
         <div class="text-secondary2">Сведения о кредите</div>
-            <input type="text" placeholder="Покупка телефона ( наименование товара)" class="ultra-square">
-            <input type="text" placeholder="Стоимость товара" class="boxs">
-            <input type="text" placeholder="Количество товара" class="boxs">
-            <input type="text" placeholder="Итого сумма кредита" class="boxs">
-            <select class="boxs" id="see_credit">
+            <input type="text" placeholder="Покупка телефона ( наименование товара)" class="ultra-square" id="phoneName">
+            <input type="text" placeholder="Стоимость товара" class="boxs" id="cost">
+            <input type="text" placeholder="Количество товара" class="boxs" id="quantityGoods">
+            <input type="text" placeholder="Итого сумма кредита" class="boxs" id="creditTotal">
+            <select class="boxs" id="credit">
                 <option value="">Вид кредита </option>
                 <option value="1">1 вид</option>
                 <option value="2">2 вид</option>
             </select>
-            <input type="text" placeholder="Срок кредита ( мес)" class="boxs">
+            <input type="text" placeholder="Срок кредита ( мес)" class="boxs" id="continuesCredit">
             <select class="ultra-square" id="point">
-                <option value="0">Точка получения товара</option>
+                <option value="">Точка получения товара</option>
                 <option value="park">Парк</option>
                 <option value="moon">Луна</option>
             </select>

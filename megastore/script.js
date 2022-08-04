@@ -28,10 +28,11 @@ function findElem () {
 }
 
 function makeObject (elements) {
-    const data = {};
+    let data = {};
     for (let i = 0; i < elements.length; i++){
-        localStorage[elements[i].id] = elements[i].value;
+        data[elements[i].id] = elements[i].value;
     }
+    localStorage.setItem('userData.form1', JSON.stringify(data));
 }
 
 form.addEventListener('submit', () => {

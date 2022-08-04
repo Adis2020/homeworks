@@ -166,7 +166,7 @@ body{
 .error-text{
     display: inline;
     position: absolute;
-    margin-top: -2px; /*Распологается выше так как текст появляется внутри 'inputs'*/
+    margin-top: 0px; /*Распологается выше так как текст появляется внутри 'inputs'*/
 
     font-family: 'Sora', sans-serif;
     color: red;
